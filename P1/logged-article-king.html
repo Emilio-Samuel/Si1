@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			King Arthur (2017)
+		</title>
+		<base href=".">
+		<link rel="stylesheet" href="styles/styles.css">
+	</head>
+	<body>
+        <div class="top-menu">
+
+					<a href="logged-index.html"><h1>Blu-ray Stuff</h1></a>
+					<button onclick="window.location='shopping-bag.html'">Carrito de la compra</button>
+					<button onclick="window.location='index.html'">Salir</button>
+					<a href="history.html"><h3>Pepe</h3></a>
+
+        </div>
+
+				<aside id="side-menu">
+
+						<!-- Caja de búsqueda -->
+						<form>
+								<input type="text" name="movie" placeholder="Busca tu película">
+						</form>
+
+						<a href="logged-index.html"><h3>Novedades</h3></a>
+
+						<!-- Filtrar por categoría -->
+						<div class="dropdown">
+								<h3>Categorías</h3>
+								<ul>
+										<li><a href="logged-index.html">Drama (29)</a></li>
+										<li><a href="logged-index.html">Comedia (24)</a></li>
+										<li><a href="logged-index.html">Ciencia Ficción (17)</a></li>
+										<li><a href="logged-index.html">Fantasía (9)</a></li>
+										<li><a href="logged-index.html">Documental (3)</a></li>
+								</ul>
+						</div>
+
+						<a id = "historial" href="history.html"><h3>Historial de compras</h3></a>
+
+				</aside>
+		<!-- He optado por hacerlo con un div porque sino pisaba los demás main -->
+		<div class = "description">
+			<a id = "add-basket" href="shopping-bag.html"><button>Añadir al carrito</button></a>
+			<h1>
+				King Arthur (2017)
+			</h1>
+			<div id= "film-description">
+				<img src="assets/img/kingarthur.jpg" alt="Image not available" >
+			</div>
+			<div id="text-description">
+				La historia introduce a un joven Arturo que dirige los callejones de Londinium con su pandilla, sin darse cuenta del linaje real que posee hasta que saca de la piedra la espada Excalibur
+				y, con ella, su futuro. Desafiado de forma instantánea por el poder de Excalibur, Arturo se ve obligado a tomar algunas decisiones difíciles. Uniéndose a la Resistencia y tras conocer
+				a una joven misteriosa llamada La Maga, tendrá que aprender a dominar la espada, enfrentar sus demonios y unir al pueblo para derrotar al tirano Vortigern, que robó su corona y asesinó a
+				sus padres, y convertirse en rey.3
+			</div>
+		</div>
+
+        <footer id="bottom">
+            <!--
+            <p>Emilio Samuel Aced Fuentes <span class="email">&lt;emilioaquarisbq@gmail.com&gt;</span></p>
+            <p>Diego Sáinz de Medrano <span class="email">&lt;diego.sainzdemedrano@gmail.com&gt;</span></p>
+            -->
+            <img src="assets/img/emilio.jpg" alt="Powerlevel over 9000">
+            <span>Powered by</span>
+            <span>Acerca de</span>
+            <span>Contacto</span>
+            <span>Aviso legal</span>
+        </footer>
+
+    </body>
+</html>

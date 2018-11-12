@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    <base href=".">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+    <body>
+
+        <div class="top-menu">
+
+            <a href="index.html"><h1>Blu-ray Stuff</h1></a>
+            <button onclick="window.location='register.html'">Registro</button>
+
+        </div>
+
+        <aside id="side-menu">
+
+            <!-- Caja de búsqueda -->
+            <form>
+                <input type="text" name="movie" placeholder="Busca tu película">
+            </form>
+
+            <a href="index.html"><h3>Novedades</h3></a>
+
+            <!-- Filtrar por categoría -->
+            <div class="dropdown">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="index.html">Drama (29)</a></li>
+                    <li><a href="index.html">Comedia (24)</a></li>
+                    <li><a href="index.html">Ciencia Ficción (17)</a></li>
+                    <li><a href="index.html">Fantasía (9)</a></li>
+                    <li><a href="index.html">Documental (3)</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+
+
+		<div class = "register-page">
+			<h1> Identficación </h1>
+			E-mail:<br>
+			<input type="text" name="email"><br>
+			Contraseña:<br>
+			<input type="password" name="psw"><br>
+			<a href="logged-index.html"><button class = "button">Sign in</button></a>
+
+		</div>
+
+        <footer id="bottom">
+            <!--
+            <p>Emilio Samuel Aced Fuentes <span class="email">&lt;emilioaquarisbq@gmail.com&gt;</span></p>
+            <p>Diego Sáinz de Medrano <span class="email">&lt;diego.sainzdemedrano@gmail.com&gt;</span></p>
+            -->
+            <img src="assets/img/emilio.jpg" alt="Powerlevel over 9000">
+            <span>Powered by</span>
+            <span>Acerca de</span>
+            <span>Contacto</span>
+            <span>Aviso legal</span>
+        </footer>
+
+    </body>
+</html>

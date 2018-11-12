@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Death Note (2017)</title>
+        <base href=".">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="shortcut icon" type="image/png" href="bluray-stuff-favicon.png"/>
+    </head>
+    <body>
+
+        <div class="top-menu">
+
+            <a href="logged-index.html"><h1>Blu-ray Stuff</h1></a>
+            <button onclick="window.location='shopping-bag.html'">Carrito de la compra</button>
+            <button onclick="window.location='index.html'">Salir</button>
+            <a href="history.html"><h3>Pepe</h3></a>
+
+
+        </div>
+
+        <aside id="side-menu">
+
+            <!-- Caja de búsqueda -->
+            <form>
+                <input type="text" name="movie" placeholder="Busca tu película">
+            </form>
+
+            <a href="logged-index.html"><h3>Novedades</h3></a>
+
+            <!-- Filtrar por categoría -->
+            <div class="dropdown">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="logged-index.html">Drama (29)</a></li>
+                    <li><a href="logged-index.html">Comedia (24)</a></li>
+                    <li><a href="logged-index.html">Ciencia Ficción (17)</a></li>
+                    <li><a href="logged-index.html">Fantasía (9)</a></li>
+                    <li><a href="logged-index.html">Documental (3)</a></li>
+                </ul>
+            </div>
+
+            <a id = "historial" href="history.html"><h3>Historial de compras</h3></a>
+
+        </aside>
+
+		<!-- He optado por hacerlo con un div porque sino pisaba los demás main -->
+		<div class = "description">
+			<a id = "add-basket" href="shopping-bag.html"><button>Añadir al carrito</button></a>
+			<h1>
+				Death Note (2017)
+			</h1>
+			<div id= "film-description">
+				<img src="assets/img/deathnote.jpg" alt="Image not available" >
+			</div>
+			<div id="text-description">
+				En Seattle, un estudiante de último de secundaria llamado Light Turner encuentra un cuaderno de notas con la leyenda "Death Note" en su portada.
+				Luego es visitado por Ryuk, un Shinigami ("dios de la muerte" en japonés) que le explica que puede matar a cualquier persona con sólo escribir su nombre en la libreta y conocer su rostro.
+				Tras cerciorarse de ello, Light escribe el nombre de Antony Skomal, un mafioso que mató a su madre y quedó impune, el cual muere clavándose un tenedor accidentalmente.
+				El propietario de la libreta es el único que puede ver al shinigami. La misma tiene escrita en ella reglas para sobre su funcionamiento, entre estas,
+				que quien escribe el nombre de una persona puede controlar sus acciones por 48 horas antes de su muerte.
+				<P>
+				Al día siguiente, Light muestra la libreta a su compañera de clase Mia Sutton, quien lo motiva a usarla para deshacerse de los criminales en el mundo.
+				Ambos deciden cooperar juntos y adoptan el nombre de "Kira" para revelar al mundo que alguien está matando criminales.
+				Kira se vuelve rápidamente aclamado por muchas personas, quienes encuentran en él a un justiciero; mientras tanto Light y Mia se vuelven amantes.
+				Las acciones de Kira llaman la atención de "L", un enigmático detective privado que logra ubicar a Kira en Seattle y deducir que extrae información de las bases de datos policiales.
+				L y su asistente y figura paterna, Watari, viajan entonces a Seattle para tratar de atrapar a Kira con ayuda del jefe de la policía James Turner, quien es el padre de Light.
+			</div>
+		</div>
+
+
+        <footer id="bottom">
+            <!--
+            <p>Emilio Samuel Aced Fuentes <span class="email">&lt;emilioaquarisbq@gmail.com&gt;</span></p>
+            <p>Diego Sáinz de Medrano <span class="email">&lt;diego.sainzdemedrano@gmail.com&gt;</span></p>
+            -->
+            <img src="assets/img/emilio.jpg" alt="Powerlevel over 9000">
+            <span>Powered by</span>
+            <span>Acerca de</span>
+            <span>Contacto</span>
+            <span>Aviso legal</span>
+        </footer>
+
+    </body>
+</html>

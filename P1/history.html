@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Historial de compras</title>
+        <base href=".">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+
+        <div class="top-menu">
+
+            <a href="logged-index.html"><h1>Blu-ray Stuff</h1></a>
+            <button onclick="window.location='shopping-bag.html'">Carrito de la compra</button>
+            <button onclick="window.location='index.html'">Salir</button>
+            <a href="history.html"><h3>Pepe</h3></a>
+
+        </div>
+
+        <aside id="side-menu">
+
+            <!-- Caja de búsqueda -->
+            <form>
+                <input type="text" name="movie" placeholder="Busca tu película">
+            </form>
+
+            <a href="logged-index.html"><h3>Novedades</h3></a>
+
+            <!-- Filtrar por categoría -->
+            <div class="dropdown">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="logged-index.html">Drama (29)</a></li>
+                    <li><a href="logged-index.html">Comedia (24)</a></li>
+                    <li><a href="logged-index.html">Ciencia Ficción (17)</a></li>
+                    <li><a href="logged-index.html">Fantasía (9)</a></li>
+                    <li><a href="logged-index.html">Documental (3)</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+
+		<div class = "shopping-history">
+			<h1> Bienvenido a su historial de compras </h1>
+			<table id = "history-table">
+				<tr>	<th>Articulo</th>																									<th>Fecha de compra</th> 	<th>Precio</th>	</tr>
+				<tr>	<td><a href= "article-ghost.html"><img src="assets/img/ghostintheshell.jpg" alt="Image not available" ></a></td>	<td>25/03/2017</td> 		<td>20.00€</td>	</tr>
+				<tr>	<td><a href= "article-king.html"><img src="assets/img/kingarthur.jpg" alt="Image not available" ></a></td>			<td>5/08/2017</td> 			<td>15.00€</td>	</tr>
+				<tr>	<td><a href= "article-wonder.html"><img src="assets/img/wonderwoman.jpg" alt="Image not available" ></a></td>		<td>2/05/2017</td> 			<td>13.99€</td>	</tr>
+			</table>
+		</div>
+
+
+        <footer id="bottom">
+            <!--
+            <p>Emilio Samuel Aced Fuentes <span class="email">&lt;emilioaquarisbq@gmail.com&gt;</span></p>
+            <p>Diego Sáinz de Medrano <span class="email">&lt;diego.sainzdemedrano@gmail.com&gt;</span></p>
+            -->
+            <img src="assets/img/emilio.jpg" alt="Powerlevel over 9000">
+            <span>Powered by</span>
+            <span>Acerca de</span>
+            <span>Contacto</span>
+            <span>Aviso legal</span>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blu-ray Stuff</title>
+        <base href=".">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="shortcut icon" type="image/png" href="bluray-stuff-favicon.png"/>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+
+        <div class="top-menu">
+
+            <a href="index.html"><h1>Blu-ray Stuff</h1></a>
+            <button onclick="window.location='signin.php'">Carrito de la compra</button>
+            <button onclick="window.location='register.php'">Registro</button>
+            <button onclick="window.location='signin.php'">Iniciar Sesión</button>
+
+        </div>
+
+        <aside id="side-menu">
+
+            <!-- Caja de búsqueda -->
+            <form>
+                <input type="text" name="movie" placeholder="Busca tu película">
+            </form>
+
+            <a href="index.html"><h3>Novedades</h3></a>
+
+            <!-- Filtrar por categoría -->
+            <div class="dropdown">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="index.html">Drama (29)</a></li>
+                    <li><a href="index.html">Comedia (24)</a></li>
+                    <li><a href="index.html">Ciencia Ficción (17)</a></li>
+                    <li><a href="index.html">Fantasía (9)</a></li>
+                    <li><a href="index.html">Documental (3)</a></li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <div id="main">
+
+            <ul id="movies">
+                <li>
+                    <a href="article-death.html">
+                        <h3>Death Note (2017)</h3>
+                        <img src="assets/img/deathnote.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="article-ghost.html">
+                        <h3>Ghost in the Shell (2017)</h3>
+                        <img src="assets/img/ghostintheshell.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="article-guardians.html">
+                        <h3>Guardians of the Galaxy Vol.2 (2017)</h3>
+                        <img src="assets/img/guardiansofthegalaxy2.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="article-king.html">
+                        <h3>King Arthur (2017)</h3>
+                        <img src="assets/img/kingarthur.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="article-pirates.html">
+                        <h3>Pirates of the Caribbean: Dead Men Tell No Tales (2017)</h3>
+                        <img src="assets/img/piratesofthecaribbean5.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="article-wakefield.html">
+                        <h3>Wakefield (2017)</h3>
+                        <img src="assets/img/wakefield.jpg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="article-wonder.html">
+                        <h3>Wonder Woman (2017)</h3>
+                        <img src="assets/img/wonderwoman.jpg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <footer id="bottom">
+            <!--
+            <p>Emilio Samuel Aced Fuentes <span class="email">&lt;emilioaquarisbq@gmail.com&gt;</span></p>
+            <p>Diego Sáinz de Medrano <span class="email">&lt;diego.sainzdemedrano@gmail.com&gt;</span></p>
+            -->
+            <img src="assets/img/emilio.jpg" alt="Powerlevel over 9000">
+            <span>Powered by</span>
+            <span>Acerca de</span>
+            <span>Contacto</span>
+            <span>Aviso legal</span>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="scripts/index.js"></script>
+
+    </body>
+</html>

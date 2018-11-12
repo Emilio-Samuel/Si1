@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<catalog>
+    <movie>
+        <id>1</id>
+        <title>Death Note</title>
+        <year>2017</year>
+        <description>Un día, cuando Light termina las clases, encuentra un cuaderno negro tendido en el suelo, llamado «Death Note», un cuaderno sobrenatural que es capaz de matar personas si se escriben los nombres en él y si el portador visualiza mentalmente la cara de quien quiere asesinar. Nueva adaptación de la famosa serie (y manga) "Death Note" esta vez con actores reales.</description>
+        <actors>
+            <actor>Nat Wolff</actor>
+            <actor>Lakeith Stanfield</actor>
+        </actors>
+        <genres>
+            <genre>Crimen</genre>
+            <genre>Drama</genre>
+            <genre>Aventura</genre>
+        </genres>
+        <duration>101</duration>
+        <stock>16</stock>
+        <price>13.99</price>
+        <poster>assets/img/deathnote.jpg</poster>
+    </movie>
+    <movie>
+        <id>2</id>
+        <title>Ghost in the Shell</title>
+        <year>2017</year>
+        <description>En un Japón futurista la joven Motoko Kusanagi (Scarlett Johansson), también conocida como 'the Major' Mira Killian, es la líder de grupo operativo de élite, Sección 9, cuyo objetivo es luchar contra el ciberterrorismo y los crímenes tecnológicos. Al mando de esta unidad de operaciones encubiertas está Aramaki (Takeshi Kitano), y destaca Batou (Pilou Asbæk), un exmilitar considerado como uno de los agentes más salvajes del grupo. Pero, después de un peligrosa misión, el cuerpo de Kusanagi queda dañado, siendo sometida a una operación quirúrgica para trasplantar su cerebro en un cuerpo robótico. Este nuevo cuerpo artificial le permitirá ser capaz de realizar hazañas sobrehumanas especialmente requeridas para su trabajo... Basada en la aclamada saga homónima de ciencia ficción.</description>
+        <actors>
+            <actor>Scarlett Johansson</actor>
+        </actors>
+        <genres>
+            <genre>Ciencia Ficción</genre>
+            <genre>Thriller</genre>
+        </genres>
+        <duration>107</duration>
+        <stock>10</stock>
+        <price>13.99</price>
+        <poster>assets/img/ghostintheshell.jpg</poster>
+    </movie>
+    <movie>
+        <id>3</id>
+        <title>Guardians of the Galaxy Vol.2</title>
+        <year>2017</year>
+        <description>Continúan las aventuras del equipo en su travesía por los confines del cosmos. Los Guardianes deberán luchar para mantener unida a su nueva familia mientras intentan resolver el misterio de los verdaderos orígenes de Peter Quill. Viejos rivales se convertirán en nuevos aliados, y queridos personajes de los cómics clásicos acudirán en ayuda de nuestros héroes a medida que el universo cinematográfico de Marvel continúa expandiéndose.</description>
+        <actors>
+            <actor>Chris Pratt</actor>
+            <actor>Zoe Saldana</actor>
+            <actor>Dave Bautista</actor>
+        </actors>
+        <genres>
+            <genre>Ciencia Ficción</genre>
+            <genre>Superhéroes</genre>
+        </genres>
+        <duration>136</duration>
+        <stock>1</stock>
+        <price>13.99</price>
+        <poster>assets/img/guardiansofthegalaxy2.jpg</poster>
+    </movie>
+    <movie>
+        <id>4</id>
+        <title>King Arthur: Legend of the Sword</title>
+        <year>2017</year>
+        <description>Una reinterpretación de la leyenda artúrica centrada en el hijo ilegítimo de Arturo, Owain, que deberá tomar el puesto de su padre como rey.</description>
+        <actors>
+            <actor>Charlie Hunnam</actor>
+            <actor>Astrid Bergès-Frisbey</actor>
+        </actors>
+        <genres>
+            <genre>Aventura</genre>
+            <genre>Drama</genre>
+            <genre>Acción</genre>
+        </genres>
+        <duration>126</duration>
+        <stock>3</stock>
+        <price>13.99</price>
+        <poster>assets/img/kingarthur.jpg</poster>
+    </movie>
+    <movie>
+        <id>5</id>
+        <title>Pirates of the Caribbean: Dead Men Tell No Tales</title>
+        <year>2017</year>
+        <description>El capitán Jack Sparrow se enfrentará a un grupo de piratas-fantasma comandados por una de sus viejas némesis, el terrorífico capitán Salazar, recién escapado del Triángulo de las Bermudas. La única posibilidad de Sparrow para salir con vida es encontrar el legendario Tridente de Poseidón, un poderoso artefacto que le da a su poseedor el control de los mares.</description>
+        <actors>
+            <actor>Johnny Depp</actor>
+            <actor>Javier Bardem</actor>
+        </actors>
+        <genres>
+            <genre>Aventura</genre>
+            <genre>Fantasía</genre>
+            <genre>Acción</genre>
+        </genres>
+        <duration>129</duration>
+        <stock>1</stock>
+        <price>13.99</price>
+        <poster>assets/img/piratesofthecaribbean5.jpg</poster>
+    </movie>
+    <movie>
+        <id>6</id>
+        <title>Wakefield</title>
+        <year>2017</year>
+        <description>Un hombre estresado y harto de su monótona vida decide abandonar a su familia para vivir en el ático de su casa durante meses sin que nadie lo sepa, considerándole tanto la policía como su familia una persona "desparecida".</description>
+        <actors>
+            <actor>Bryan Cranston</actor>
+            <actor>Jennifer Garner</actor>
+        </actors>
+        <genres>
+            <genre>Drama</genre>
+        </genres>
+        <duration>106</duration>
+        <stock>7</stock>
+        <price>13.99</price>
+        <poster>assets/img/wakefield.jpg</poster>
+    </movie>
+    <movie>
+        <id>7</id>
+        <title>Wonder Woman</title>
+        <year>2017</year>
+        <description>Antes de ser Wonder Woman (Gal Gadot) era Diana, princesa de las Amazonas, entrenada para ser una guerrera invencible. Diana fue criada en una isla paradisíaca protegida. Hasta que un día un piloto norteamericano (Chris Pine), que tiene un accidente y acaba en sus costas, le habla de un gran conflicto existente en el mundo [Primera Guerra Mundial]. Diana decide salir de la isla convencida de que puede detener la terrible amenaza. Mientras lucha junto a los hombres en la guerra que acabará con todas las guerras, Diana descubre todos sus poderes y su verdadero destino.</description>
+        <actors>
+            <actor>Gal Gadot</actor>
+            <actor>Chris Pine</actor>
+        </actors>
+        <genres>
+            <genre>Ciencia Ficción</genre>
+            <genre>Superhéroes</genre>
+        </genres>
+        <duration>141</duration>
+        <stock>5</stock>
+        <price>13.99</price>
+        <poster>assets/img/wonderwoman.jpg</poster>
+    </movie>
+    <!-- movie>title+year+description+(actors>actor)+(genres>genre)+duration+stock+price+poster -->
+</catalog>
+

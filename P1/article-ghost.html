@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ghost in the Shell (2017)</title>
+        <base href=".">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+
+        <div class="top-menu">
+
+            <a href="index.html"><h1>Blu-ray Stuff</h1></a>
+            <button onclick="window.location='signin.html'">Carrito de la compra</button>
+            <button onclick="window.location='register.html'">Registro</button>
+            <button onclick="window.location='signin.html'">Iniciar Sesión</button>
+
+        </div>
+
+        <aside id="side-menu">
+
+            <!-- Caja de búsqueda -->
+            <form>
+                <input type="text" name="movie" placeholder="Busca tu película">
+            </form>
+
+            <a href="index.html"><h3>Novedades</h3></a>
+
+            <!-- Filtrar por categoría -->
+            <div class="dropdown">
+                <h3>Categorías</h3>
+                <ul>
+                    <li><a href="index.html">Drama (29)</a></li>
+                    <li><a href="index.html">Comedia (24)</a></li>
+                    <li><a href="index.html">Ciencia Ficción (17)</a></li>
+                    <li><a href="index.html">Fantasía (9)</a></li>
+                    <li><a href="index.html">Documental (3)</a></li>
+                </ul>
+            </div>
+
+        </aside>
+		<!-- He optado por hacerlo con un div porque sino pisaba los demás main -->
+		<div class = "description">
+			<a id = "add-basket" href="signin.html"><button>Añadir al carrito</button></a>
+			<h1>
+				Ghost in the Shell (2017)
+			</h1>
+			<div id= "film-description">
+				<img src="assets/img/ghostintheshell.jpg" alt="Image not available" >
+			</div>
+			<div id="text-description">
+			En un futuro próximo, Mayor (Scarlett Johansson) es la primera de su especie: esta humana, cuya vida fue salvada tras un espeluznante accidente,
+			ha sido sometida a un proceso de ciber-regeneración gracias al cual se ha convertido en el soldado perfecto consagrado a detener a los más peligrosos delincuentes mundiales.
+			Ante las nuevas cotas de paroxismo alcanzadas por el terrorismo, que es capaz de apoderarse de la voluntad de las personas y someterlas a sus designios,
+			Mayor se convierte en el único medio de detener el avance del mal. Pero mientras se prepara para enfrentarse al nuevo enemigo,
+			Mayor descubre que lo que cree saber sobre su pasado es una burda mentira: su vida no fue salvada, fue robada. Nada la detendrá para recuperar su pasado,
+			averiguar quiénes la han infligido este tormento y detenerlos antes de que repitan la operación con otros humanos.
+			Basada en el Manga japonés "Ghost in the Shell: El alma de la máquina".
+			</div>
+		</div>
+
+
+        <footer id="bottom">
+            <!--
+            <p>Emilio Samuel Aced Fuentes <span class="email">&lt;emilioaquarisbq@gmail.com&gt;</span></p>
+            <p>Diego Sáinz de Medrano <span class="email">&lt;diego.sainzdemedrano@gmail.com&gt;</span></p>
+            -->
+            <img src="assets/img/emilio.jpg" alt="Powerlevel over 9000">
+            <span>Powered by</span>
+            <span>Acerca de</span>
+            <span>Contacto</span>
+            <span>Aviso legal</span>
+        </footer>
+
+    </body>
+</html>

